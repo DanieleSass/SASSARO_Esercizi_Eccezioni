@@ -16,6 +16,9 @@ public class Main1 {
             println(e.getMessage());
             println("Differenza saldo-importo richiesto: " + (e.getSaldoAttuale()-e.getImportoRichiesto()));
         }
+        finally{
+            println("PRELIEVO ECCESSIVO -> BLOCCO FINALLY");
+        }
 
         try{
             conto.preleva(-3);

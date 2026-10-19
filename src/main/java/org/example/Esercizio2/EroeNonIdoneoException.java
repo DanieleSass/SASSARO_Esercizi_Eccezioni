@@ -9,9 +9,9 @@ public class EroeNonIdoneoException extends Exception {
     }
 
     public EroeNonIdoneoException(String er, int lvl){
+        super ("Eroe: " + er + " - livello: "+ lvl+" non supera missione");
         nomeEroe=er;
         livello=lvl;
-        super ("Eroe: " + er + " - livello: "+ lvl+" non supera missione");
     }
 
     public int getLivello() {

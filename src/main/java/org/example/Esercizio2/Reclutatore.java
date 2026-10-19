@@ -14,7 +14,7 @@ public class Reclutatore {
     public Reclutatore()
     {
         Faker f = new Faker();
-        nome = f.name().fullName();
+        nome = f.superhero().name();
         livello = f.number().numberBetween(1,101);
     }
 

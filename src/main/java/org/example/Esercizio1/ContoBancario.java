@@ -6,7 +6,7 @@ public class ContoBancario {
         saldo = s;
     }
 
-    public void preleva(double quantitaRichiesta) throws  SaldoInsufficienteException{
+    public void preleva(double quantitaRichiesta) throws SaldoInsufficienteException{
 
         if(quantitaRichiesta<=0){
             throw new ImportoNonValidoException("Importo è minore di 0, correggere");
